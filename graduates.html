@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/graduates.css">
+</head>
+<body>
+       <!-- Navbar -->
+       <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="/img/coa1.png" alt="Logo 1" class="logo">
+                <img src="/img/Seal_of_the_Department_of_Education_of_the_Philippines.png" alt="Logo 2" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="facultystaff.html">Faculty/Staff</a></li>
+                <li><a href="graduates.html">Graduates</a></li>
+                <li><a href="enroless.html">Enrollees</a></li>
+                <li><a href="#">Photo Gallery</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Organizational Chart</a></li>
+                <li><a href="#">Graduation Song</a></li>
+            </ul>
+            <button class="nav-toggle" onclick="toggleNavbar()">☰</button>
+        </div>
+    </nav>
+
+    
+    <!-- Header Section -->
+    <header class="header" style="display: flex; justify-content: center;">
+        <div style="width: 60%;">
+        <div class="header-container" style=" display: flex; justify-content: center; align-items: center;" >
+        <img style="height: 100px;" src="/img/243049346_235736848569622_8450156821278092665_n.png" alt="Logo 1" class="logo">
+        <h1>Pedro Guevara Memorial <br> National High School</h1>
+        <img style="height: 100px;" src="/img/bago-pilipinas-logo.png" alt="Logo 1" class="logo">
+        
+    </div>
+</div>
+
+    </header>
+    <div class="hr-container" style="display: flex; justify-content: center;">
+        <hr style="background-color: green; height: 2px; width: 55%;">
+    </div>
+
+    <div class="navbar" style="margin-top: 20px;">
+        <h1 style="text-align: center; color: white;">GRADUATES</h1>
+    </div>
+    <div style="display: flex; justify-content: center;">  
+
+    <div style=" width: 70%;  margin-top: 20px; margin-bottom: 20px;">
+        <div>
+    <h1 style="text-align: center;">Philosophy</h1>
+    <p>Produce highly competitive, skilled and disciplined Guevarian graduates by raising the use of Technology in Education specifically in the seven Life Long Special Program offered by the School. Thus, empowering them for sustainable development that requires the attainment of functional and productive individual.
+    </p>
+</div>
+</div>
+</div>
+    <div  style="display: flex; justify-content: center;">  
+       
+         <div class="middle-container" style=" width: 70%; display: flex; justify-content: space-evenly; margin-top: 20px; margin-bottom: 20px;">
+       
+        <div class="mission">
+            <h2>2000-2001</h2>
+            <hr style="height: 3px; background-color: white; margin-top: 10px; margin-bottom: 30px;">    
+            <h3>Total: 1686</h3>
+        </div>
+        <div class="vision">
+            <h2>2001-2002</h2>
+            <hr style="height: 3px; background-color: white; margin-top: 10px; margin-bottom: 30px;">    
+            <h3>Total: 1648</h3>        </div>
+        <div class="vision">
+            <h2>2005-2006</h2>
+            <hr style="height: 3px; background-color: white; margin-top: 10px; margin-bottom: 30px;">    
+            <h3>Total: 756</h3>        </div>
+    </div>
+</div>
+<script>
+    function toggleNavbar() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+    const logoContainer = document.querySelector('.logo-container');
+    logoContainer.classList.toggle('show'); // Toggle logo visibility
+    
+}
+</script>
+</body>
+</html>

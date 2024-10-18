@@ -1,0 +1,9 @@
+@media (min-width: 360px) and (max-width: 1023px) {
+
+.middle-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+    gap: 20px;
+    justify-content: space-between;
+}
+}

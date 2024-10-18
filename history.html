@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+</head>
+<body>
+       <!-- Navbar -->
+       <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="/img/coa1.png" alt="Logo 1" class="logo">
+                <img src="/img/Seal_of_the_Department_of_Education_of_the_Philippines.png" alt="Logo 2" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="facultystaff.html">Faculty/Staff</a></li>
+                <li><a href="graduates.html">Graduates</a></li>
+                <li><a href="enroless.html">Enrollees</a></li>
+                <li><a href="#">Photo Gallery</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Organizational Chart</a></li>
+                <li><a href="#">Graduation Song</a></li>
+            </ul>
+            <button class="nav-toggle" onclick="toggleNavbar()">☰</button>
+        </div>
+    </nav>
+
+    
+    <!-- Header Section -->
+    <header class="header" style="display: flex; justify-content: center;">
+        <div style="width: 60%;">
+        <div class="header-container" style=" display: flex; justify-content: center; align-items: center;" >
+        <img style="height: 100px;" src="/img/243049346_235736848569622_8450156821278092665_n.png" alt="Logo 1" class="logo">
+        <h1>Pedro Guevara Memorial <br> National High School</h1>
+        <img style="height: 100px;" src="/img/bago-pilipinas-logo.png" alt="Logo 1" class="logo">
+        
+    </div>
+</div>
+
+    </header>
+    <div class="hr-container" style="display: flex; justify-content: center;">
+        <hr style="background-color: green; height: 2px; width: 55%;">
+    </div>
+
+    <div class="navbar" style="margin-top: 20px;">
+        <h1 style="text-align: center; color: white;">HISTORY</h1>
+    </div>
+    <div style="display: flex; justify-content: center; margin-bottom: 10px;">
+        <div style="width: 50%;">
+            <span style="color: #4E9F3D; font-size: 10px;">Laguna High School (1902-1954) | Pedro Guevara Memorial High School (1955-1994) | Pedro Guevara Memorial National High School (1995 to Present)</span>
+
+            <p>The PEDRO GUEVARA MEMORIAL HIGH SCHOOL, formerly LAGUNA HIGH SCHOOL, was established by virtue of the law on March 7, 1902 of the insular government with Mr. Willy, an American, as its first Principal. The cornerstone of the present high school was laid in January, 1914 on what was formerly a cemetery, its first building which now houses the main building was finally completed in 1924. Its first filipino principal was Mr. Aquilino Carino
+                and the first filipino teachers were Mr. Alejandro Adea, Mrs. Eustaquia delos Reyes and Mr. Antonio Maceda.
+                </p>
+                <br>
+
+                <p>This school sent forth its first graduates in 1917 with Doctor Vicente Torrechante and Mrs. Felicidad Fabiero Llamas as Valedictorian and Salutatorian, respectively. When World War II broke out in 1941, the Japanese occupation forces used the high school building as a barracks. This resulted in the total destruction of all the equipment and partial damage to the edifice itself.
+                </p>
+                <br>
+
+                <p>After the war, the provincial government with the assistance of the P.T.A, rehabilitated the school. This marked the start of the consistent growth of the school. During the school year 1954 -1955, an Act of Congress known as RA No. 238 sponsored by Congressman Wenceslao Rancap Lagumbay, one of its outstanding Alumni, changed the name of LAGUNA HIGH SCHOOL to PEDRO GUEVARA MEMORIAL HIGH SCHOOL in honor of
+                    DON PEDRO GUEVARA, an illustrious son of Santa Cruz and former resident commisioner to the U.S. In 1989 the school was nationalized.</p>
+
+                <br>
+                <p>At present it has a complete set of administrative and support staff doing all the office works and catering the needs of a little less than 200 teachers. Being a Division Leader School (DLS), seminars in the Division of Laguna and Region IV are frequently held here. As a member of the Network of 110 Science and Technology High Schools in the Philippines - DOST -SEI -ESEP, the school is continuously offering Special Science Classes to talented students in Science and Mathematics. The PEDRO GUEVARA MEMORIAL NATIONAL HIGH SCHOOL has sent forth into the world thousands of useful citizens and trained leaders now engaged in the task of developing their communities, earning a name for themselves, perpetuating the way of life their mentors trained them in. Under the able administration of the present principal, it holds the promise of a brighter future.</p>
+        </div>
+    </div>
+    <script>
+        function toggleNavbar() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+        const logoContainer = document.querySelector('.logo-container');
+        logoContainer.classList.toggle('show'); // Toggle logo visibility
+        
+    }
+    </script>
+</body>
+</html>

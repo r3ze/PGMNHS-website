@@ -1,0 +1,7 @@
+@media (min-width: 360px) and (max-width: 1023px) {
+    .middle-container{
+        display: grid;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    }

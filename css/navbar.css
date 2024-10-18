@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #004225;
+    padding: 10px;
+}
+
+
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.mission-vision {
+    display: flex;
+width: 80%;
+    padding: 20px;
+background-color: red;
+}
+
+.mission, .vision {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.img-container {
+    width: 100%; 
+    height: 400px; 
+    background-image: url('/img/462538843_2943160959176095_5889480602103825049_n (1).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* Default for large desktops (1024px and above) */
+@media (min-width: 1024px) {
+    .navbar-container {
+        flex-direction: row;
+    }
+    .nav-toggle{
+        display: none;
+    }
+
+    .mission-vision {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mission, .vision {
+        width: 30%;
+    }
+}
+
+table {
+    width: 100%;
+    color: white;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 8px;
+    text-align: center;
+
+  }
+
+
+
+    /* Mobile view (360px to 767px) */
+    @media (min-width: 360px) and (max-width: 1023px) {
+        .nav-links {
+            display: none; /* Hide the navbar */
+        }
+        .logo-container{
+            display: block; 
+        }
+        .img-container{
+            height: 200px;
+        }
+    
+        .nav-toggle {
+            display: block; /* Show the toggle button */
+            background-color: #004225;
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+  
+        
+        .nav-links {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .mission-vision {
+            flex-direction: column;
+            align-items: center;
+        }   
+        .header-container{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .mission-vision-container{
+            display: flex;
+            flex-direction: column; justify-content: center;
+             align-items: center;
+        }
+        .mission, .vision {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+    }
+
+    /* Navbar visible when toggled */
+    .nav-links.show {
+        display: block;
+    }
+    .logo-container.show{
+        display: none;
+    }
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.navbar-container .logo {
+    max-width: 100px;
+}

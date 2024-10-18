@@ -1,0 +1,14 @@
+@media (min-width: 360px) and (max-width: 1023px) {
+
+    .middle-container{
+        display: flex;
+        flex-direction: column;
+     
+    }
+    #left-table{
+        width: 100%;
+    }
+    #right-table{
+        width: 100%;
+    }
+    }
